@@ -1,0 +1,21 @@
+.footer {
+  background: #080807;
+  border-top: 1px solid rgba(205, 164, 94, 0.12);
+  padding: 28px 24px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer strong {
+  color: var(--gold);
+}
+
+.credits {
+  margin-top: 6px;
+}
+
+.credits a {
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: underline;
+}
