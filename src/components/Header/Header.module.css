@@ -1,0 +1,110 @@
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(12, 11, 9, 0.88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gold-dim);
+  transition: box-shadow 0.3s;
+}
+
+.header.scrolled {
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Top bar */
+.topbar {
+  background: var(--surface);
+  padding: 7px 0;
+  font-size: 13px;
+  color: var(--text);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.topbarIcon { color: var(--gold); margin-right: 4px; }
+
+/* Branding row */
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.logo em { color: var(--gold); font-style: italic; }
+
+/* Nav */
+.navList {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  align-items: center;
+}
+
+.navLink {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.navLink:hover { color: var(--gold); opacity: 1; }
+
+/* CTA */
+.btnReservar {
+  background: var(--gold);
+  color: #0c0b09;
+  padding: 9px 22px;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.btnReservar:hover { opacity: 0.85; }
+
+/* Mobile toggle */
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .nav     { display: none; }
+  .btnReservar { display: none; }
+  .mobileToggle { display: block; }
+
+  .nav.navOpen {
+    display: block;
+    position: fixed;
+    top: 96px; left: 0; right: 0;
+    background: rgba(12, 11, 9, 0.97);
+    border-bottom: 1px solid var(--gold-dim);
+    padding: 24px 32px;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

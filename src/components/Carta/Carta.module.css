@@ -1,0 +1,84 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.tab {
+  background: none;
+  border: 1px solid rgba(205, 164, 94, 0.25);
+  color: var(--text);
+  padding: 10px 26px;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.tab:hover { color: var(--gold); border-color: var(--gold); }
+.tab.tabActive { background: var(--gold); color: #0c0b09; border-color: var(--gold); }
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1px;
+  background: rgba(205, 164, 94, 0.1);
+  border: 1px solid rgba(205, 164, 94, 0.1);
+}
+
+/* Cards */
+.card {
+  background: var(--surface);
+  padding: 22px 24px;
+  transition: background 0.2s;
+}
+.card:hover { background: var(--surface2); }
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.cardName {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--white);
+  font-weight: 500;
+  flex: 1;
+  padding-right: 12px;
+}
+
+.cardPrice {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cardNote {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+}
+
+/* Warning card */
+.cardWarning {
+  grid-column: 1 / -1;
+  background: rgba(205, 164, 94, 0.06);
+  border-top: 1px solid rgba(205, 164, 94, 0.2);
+  text-align: center;
+}
+
+.warningText {
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}

@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.tile {
+  background: var(--surface2);
+  border: 1px solid rgba(205, 164, 94, 0.12);
+  padding: 24px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.tile:hover { border-color: var(--gold); transform: translateY(-3px); }
+
+.tileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tileName {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+.tilePrice {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.tileDesc {
+  font-size: 0.8rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.tileWarn {
+  margin-top: 8px;
+  font-size: 0.74rem;
+  color: rgba(205, 164, 94, 0.7);
+  font-style: italic;
+}
+
+.note {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--gold);
+  border: 1px solid rgba(205, 164, 94, 0.2);
+  padding: 14px 24px;
+  letter-spacing: 0.04em;
+}

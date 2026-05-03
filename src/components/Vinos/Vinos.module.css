@@ -1,0 +1,70 @@
+/* Cabecera de columnas copa / botella */
+.colHeaders {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px;
+  padding: 0 24px 6px;
+  border-bottom: 1px solid rgba(205, 164, 94, 0.35);
+  margin-bottom: 8px;
+}
+
+.colLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: right;
+}
+
+/* Grupo por categoría */
+.group {
+  margin-bottom: 20px;
+}
+
+/* Badge de categoría */
+.categoryBadge {
+  background: var(--gold);
+  color: #0c0b09;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 5px 14px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+/* Grid de items */
+.grid {
+  background: rgba(205, 164, 94, 0.06);
+  border: 1px solid rgba(205, 164, 94, 0.1);
+  border-top: none;
+}
+
+/* Fila individual */
+.item {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px;
+  align-items: center;
+  padding: 10px 24px;
+  transition: background 0.2s;
+  border-bottom: 1px solid rgba(58, 53, 40, 0.6);
+}
+.item:last-child { border-bottom: none; }
+.item:hover { background: var(--surface2); }
+
+.itemName {
+  font-family: var(--serif);
+  color: var(--white);
+  font-size: 0.97rem;
+  margin: 0;
+}
+
+.itemPrice {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
+}
+
