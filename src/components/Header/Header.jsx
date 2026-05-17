@@ -47,14 +47,16 @@ export default function Header() {
           </ul>
         </nav>
 
-        <a className={styles.btnReservar} href="#book-a-table">
-          Reservar
-        </a>
+        <div className={styles.logoWrap}>
+          <a className={styles.btnReservarMobile} href="#book-a-table">
+            Reservar
+          </a>
+        </div>
 
         <button
-          className={styles.mobileToggle}
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Abrir menú"
+            className={styles.mobileToggle}
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Abrir menú"
         >
           {mobileOpen ? '✕' : '☰'}
         </button>

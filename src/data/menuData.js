@@ -91,13 +91,22 @@ export const vinos = [
   },
 ];
 
+import arroz_bogavante from '../assets/img/gallery/arroz_bogavante.jpeg';
+import ensaladilla from '../assets/img/gallery/ensaladilla_rusa.jpg';
+import fideua from '../assets/img/gallery/fideua.jpeg';
+import chipirones from '../assets/img/gallery/chipirones.jpg';
+import bravas from '../assets/img/gallery/bravas.jpg';
+import calamares from '../assets/img/gallery/calamares.png';
+import boquerones from '../assets/img/gallery/boquerones.jpg';
+import arroz from '../assets/img/gallery/arroz.jpg';
+
 export const galleryImages = [
-  { src: "src/assets/img/gallery/arroz_bogavante.jpeg", alt: "Bogavante" },
-  { src: "src/assets/img/gallery/ensaladilla_rusa.jpg", alt: "Ensaladilla" },
-  { src: "src/assets/img/gallery/fideua.jpeg", alt: "Fideua" },
-  { src: "src/assets/img/gallery/chipirones.jpg", alt: "Chipirones" },
-  { src: "src/assets/img/gallery/bravas.jpg", alt: "Bravas" },
-  { src: "src/assets/img/gallery/calamares.png", alt: "Calamares" },
-  { src: "src/assets/img/gallery/boquerones.jpg", alt: "Boquerones" },
-  { src: "src/assets/img/gallery/arroz.jpg", alt: "Arroz" },
+  { src: arroz_bogavante, alt: "Bogavante" },
+  { src: ensaladilla,     alt: "Ensaladilla" },
+  { src: fideua,          alt: "Fideua" },
+  { src: chipirones,      alt: "Chipirones" },
+  { src: bravas,          alt: "Bravas" },
+  { src: calamares,       alt: "Calamares" },
+  { src: boquerones,      alt: "Boquerones" },
+  { src: arroz,           alt: "Arroz" },
 ];
